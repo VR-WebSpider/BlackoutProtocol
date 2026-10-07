@@ -1,6 +1,6 @@
-# GASShooter Tactics
+# Blackout Protocol: Sector Zero
 
-A tactical multiplayer first/third-person shooter prototype engineered on Unreal Engine's **Gameplay Ability System (GAS)** by **Vivekanand Rajbhar (WebSpider Studios)**.
+A tactical third-person multiplayer hero shooter architecture built in **Unreal Engine 5 (C++)** by **Vivekanand Rajbhar (WebSpider Studios)**, powered by Epic's Gameplay Ability System (GAS).
 
 This project was developed as a deep technical dive into Epic's Gameplay Ability System, focusing on client-side prediction, weapon handling, networked attribute sets, dynamic damage execution calculations, and multiplayer replication.
 
@@ -58,7 +58,7 @@ Source/GASShooter/
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/VR-WebSpider/GASShooterTactics.git
+   git clone https://github.com/VR-WebSpider/BlackoutProtocol.git
    ```
 2. Right-click `GASShooter.uproject` → **Generate Visual Studio project files**.
 3. Open `GASShooter.sln` in Visual Studio 2022.
