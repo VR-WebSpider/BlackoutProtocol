@@ -13,8 +13,11 @@ FString UGSBlueprintFunctionLibrary::GetPlayerEditorWindowRole(UWorld* World)
 			switch (World->GetNetMode())
 			{
 			case NM_Client:
-				Prefix = FString::Printf(TEXT("Client %d "), GPlayInEditorID - 1);
-				break;
+				{
+					const int32 ClientId = World->GetOutermost()->GetPIEInstanceID();
+					Prefix = (ClientId != INDEX_NONE) ? FString::Printf(TEXT("Client %d "), ClientId) : TEXT("Client ");
+					break;
+				}
 			case NM_DedicatedServer:
 			case NM_ListenServer:
 				Prefix = FString::Printf(TEXT("Server "));

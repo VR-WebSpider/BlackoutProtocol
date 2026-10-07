@@ -20,5 +20,5 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "AnimNotify", meta = (ExposeOnSpawn = true))
 	bool bPlayForFirstPersonPerspective;
 
-	virtual void Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation) override;
+	virtual void Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference) override;
 };

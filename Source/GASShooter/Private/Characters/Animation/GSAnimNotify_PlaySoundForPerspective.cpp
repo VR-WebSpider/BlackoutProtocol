@@ -13,7 +13,7 @@ UGSAnimNotify_PlaySoundForPerspective::UGSAnimNotify_PlaySoundForPerspective()
 	bPlayForFirstPersonPerspective = true;
 }
 
-void UGSAnimNotify_PlaySoundForPerspective::Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation)
+void UGSAnimNotify_PlaySoundForPerspective::Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference)
 {
 	// Don't call Super to avoid call back in to blueprints
 	USoundBase* SoundToPlay = Sound;
